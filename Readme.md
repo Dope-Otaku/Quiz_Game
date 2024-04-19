@@ -1,4 +1,4 @@
-# FILEPATH
+# DSA PROJECT-1 EASY MODE
 
 class QuizGame:
 """
