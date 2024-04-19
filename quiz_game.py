@@ -14,6 +14,9 @@ class Quiz:
             user_answer = input(question)
             if user_answer == answer:
                 self.score += 1
+            else:
+                self.quit()
+                return f"One wrong answer and game is over!"
         return f"Your total score is {self.score}"
     
     def quit(self):
@@ -27,6 +30,7 @@ new = Quiz()
 print("Welcome to a quiz game")
 playing = input("Do you want to play the game? (yes/no) ")
 if playing != "yes":
+    print("Thanks for joining us")
     quit()
 
 print("Okay! Let's play: ")
